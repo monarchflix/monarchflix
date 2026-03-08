@@ -88,9 +88,20 @@ video{
 .movie{
   min-width:130px;
 }
+movies{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
 
 video{
+  width:400px;
+  max-width:100%;
+  border-radius:10px;
+}
   max-width:300px;
 }
+
 
 }
