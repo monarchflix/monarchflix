@@ -1,0 +1,96 @@
+/* MonarchFlix Netflix Style */
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:black;
+  color:white;
+}
+
+/* Header */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.logo{
+  color:red;
+  font-size:28px;
+  font-weight:bold;
+}
+
+/* Search */
+
+.search{
+  padding:8px 12px;
+  border-radius:6px;
+  border:none;
+  outline:none;
+}
+
+/* Section */
+
+section{
+  padding:20px;
+}
+
+h2{
+  margin-bottom:15px;
+}
+
+/* Movie Cards */
+
+.movies{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+}
+
+.movie{
+  min-width:180px;
+  transition:0.3s;
+}
+
+.movie img{
+  width:100%;
+  border-radius:8px;
+}
+
+.movie:hover{
+  transform:scale(1.1);
+}
+
+/* Video */
+
+video{
+  width:100%;
+  max-width:500px;
+  display:block;
+  margin:20px auto;
+  border-radius:10px;
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.logo{
+  font-size:22px;
+}
+
+.movies{
+  gap:10px;
+}
+
+.movie{
+  min-width:130px;
+}
+
+video{
+  max-width:300px;
+}
+
+}
